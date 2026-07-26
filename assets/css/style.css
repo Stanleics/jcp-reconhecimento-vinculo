@@ -355,6 +355,7 @@ p{line-height:1.7;color:var(--ink-soft);}
 
 #o-que-e .hero-copy-rail::after{top:32%;} /* estimado pelo tamanho do texto — conferir ao vivo, ajustar ±5-6% se necessário */
 #provas .hero-copy-rail::after{top:46%;} /* estimado pelo tamanho do texto (Bloco 5) — conferir ao vivo, ajustar ±5-6% se necessário */
+#stf .hero-copy-rail::after{top:38%;} /* estimado pelo tamanho do texto (Bloco 6) — conferir ao vivo, ajustar ±5-6% se necessário */
 
 .definition-text{display:flex;flex-direction:column;gap:18px;}
 .definition-text p{margin:0;}
@@ -608,42 +609,6 @@ p{line-height:1.7;color:var(--ink-soft);}
 .callout p{margin:0;font-size:14.5px;color:var(--ink);font-weight:500;}
 .callout b{color:var(--gold-600);}
 
-/* ---------- Como funciona (Bloco 7) ---------- */
-.steps{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:20px;
-  counter-reset:step;
-  margin-top:10px;
-}
-.step-card{
-  position:relative;
-  background:var(--white);
-  border-radius:var(--radius-md);
-  padding:30px 24px 26px;
-  border:1px solid rgba(20,26,43,0.07);
-  box-shadow:0 16px 40px -30px rgba(20,26,43,0.35);
-}
-.step-card .step-num{
-  font-family:var(--font-accent);
-  font-size:2.6rem;
-  color:var(--gold-500);
-  line-height:1;
-  margin-bottom:18px;
-  display:block;
-}
-.step-card h4{font-size:16.5px;margin-bottom:10px;font-family:var(--font-sans);font-weight:800;}
-.step-card p{font-size:14px;margin:0;}
-.steps-connector{
-  display:none;
-}
-.como-note{
-  margin-top:28px;
-  font-size:13.5px;
-  color:var(--ink-muted);
-  text-align:center;
-}
-
 /* ---------- Sobre (Bloco 8) ---------- */
 .about-grid{
   display:grid;
@@ -889,7 +854,6 @@ p.is-visible .reveal-word{opacity:1;filter:blur(0);}
 /* ---------- Responsive ---------- */
 @media (max-width:1080px){
   .rights-grid{grid-template-columns:repeat(2,1fr);}
-  .steps{grid-template-columns:repeat(2,1fr);}
   .main-nav{display:none;}
   .nav-toggle{display:flex;}
   .header-cta .btn{display:none;}
@@ -906,7 +870,6 @@ p.is-visible .reveal-word{opacity:1;filter:blur(0);}
 @media (max-width:720px){
   .checklist-grid{grid-template-columns:1fr;}
   .rights-grid{grid-template-columns:1fr 1fr;}
-  .steps{grid-template-columns:1fr;}
   .about-stats{grid-template-columns:1fr;}
   .footer-top{flex-direction:column;}
 }

@@ -109,7 +109,7 @@
   if (!reduceMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
     document.querySelectorAll("[data-tilt]").forEach((el) => {
       let rect = null;
-      const strength = el.classList.contains("check-card") || el.classList.contains("right-card") || el.classList.contains("step-card") ? 6 : 10;
+      const strength = el.classList.contains("check-card") || el.classList.contains("right-card") ? 6 : 10;
 
       const onMove = (e) => {
         if (!rect) rect = el.getBoundingClientRect();
