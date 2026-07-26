@@ -668,12 +668,14 @@ p{line-height:1.7;color:var(--ink-soft);}
   margin-bottom:4px;
 }
 .about-stats .stat span{font-size:12.5px;color:rgba(250,247,241,0.65);font-weight:600;line-height:1.35;display:block;}
+.about-stats .stat[data-reveal]{transition-delay:calc(var(--i,0) * 70ms);}
 .about-credentials{
   display:flex;
   flex-wrap:wrap;
   gap:10px;
   margin-top:26px;
 }
+.about-credentials .pill[data-reveal]{transition-delay:calc(var(--i,0) * 70ms);}
 .pill{
   border:1px solid rgba(250,247,241,0.22);
   border-radius:999px;
